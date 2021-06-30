@@ -1,0 +1,187 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-image {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.708),
+      rgba(255, 0, 0, 0)
+    ),
+    url('./assets/cover.jpg');
+  background-size: cover;
+  position: relative;
+  height: 40vh;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.721);
+  padding: 0.5rem;
+}
+
+.boton {
+  width: 30%;
+}
+
+.heroImage {
+  filter: saturate(0.2);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.features {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features div img {
+  width: 30px;
+  min-width: 30px;
+}
+
+.features div h5 {
+  font-weight: 300;
+}
+
+.features div {
+  min-height: min(60px, 70px);
+  min-width: 100px;
+  border-radius: 7px;
+}
+.star {
+  color: #ffc927;
+}
+
+.rate {
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.discover {
+  animation: discoverMove 7s infinite;
+  position: relative;
+}
+
+.share {
+  animation: shareMove 7s infinite;
+  position: relative;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.fas {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .container-features2 {
+    height: 80vh;
+  }
+
+  .inner-container-features div {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner-container-features div {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 767px) {
+  .inner-container-features div {
+    width: 90px;
+    height: 90px;
+  }
+  @keyframes discoverMove {
+    0% {
+      top: 0%;
+
+      left: 0%;
+    }
+    20% {
+      top: 30%;
+
+      left: 0%;
+    }
+    40% {
+      left: 67%;
+      top: 30%;
+    }
+    60% {
+      top: -30%;
+      left: 67%;
+    }
+    80% {
+      left: 0%;
+      top: -30%;
+    }
+    100% {
+      left: 0%;
+      top: 0%;
+    }
+  }
+
+  @keyframes shareMove {
+    0% {
+      bottom: 0%;
+
+      right: 0%;
+    }
+    20% {
+      bottom: 30%;
+
+      right: 0%;
+    }
+    40% {
+      right: 67%;
+      bottom: 30%;
+    }
+    60% {
+      bottom: -30%;
+      right: 67%;
+    }
+    80% {
+      right: 0%;
+      bottom: -30%;
+    }
+    100% {
+      bottom: 0%;
+
+      right: 0%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .inner-container-features div {
+    width: 120px;
+    height: 120px;
+  }
+}
