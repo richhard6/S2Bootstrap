@@ -11,17 +11,47 @@ body {
     ),
     url('./assets/cover.jpg');
   background-size: cover;
+  background-position: top right;
   position: relative;
   height: 40vh;
 }
 
 .title {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.721);
   padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-toggler:hover {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  border-radius: 7px;
+}
+
+.nav-item:hover {
+  background: #282e32;
+  border-radius: 7px;
+}
+
+.list-group-item:hover {
+  background: #282e32;
+}
+
+.list-group-item:first-child:hover {
+  background: #212629;
+  border-radius: 0px;
+  cursor: text;
 }
 
 .boton {
@@ -75,6 +105,31 @@ body {
   position: relative;
 }
 
+.fab {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 7px;
+}
+
+.fab:hover {
+  background: #282e32;
+}
+
+.fas {
+  font-size: 1.5rem;
+}
+
+.list-group-item {
+  border: 1px solid #e9ecef;
+}
+
+.list-group-item-dark {
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(0.95);
@@ -92,13 +147,17 @@ body {
   }
 }
 
-.fas {
-  font-size: 1.5rem;
-}
-
 @media (max-width: 767px) {
+  .discover {
+    position: static;
+  }
+
+  .share {
+    position: static;
+  }
+
   .container-features2 {
-    height: 80vh;
+    height: 85vh;
   }
 
   .inner-container-features div {
@@ -119,6 +178,7 @@ body {
     width: 90px;
     height: 90px;
   }
+
   @keyframes discoverMove {
     0% {
       top: 0%;
