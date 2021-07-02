@@ -27,7 +27,7 @@
         <div class="container-fluid">
           <a class="navbar-brand text-white fs-3" href="#">
             <img
-              src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+              src="./assets/skateit.png"
               alt=""
               width="30"
               height="24"
@@ -62,28 +62,41 @@
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
-
           >
-          <i class="fas fa-bars text-white"></i>
+            <i class="fas fa-bars text-white"></i>
           </button>
 
           <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >Spots</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >Contact</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >About us</a
                 >
               </li>
@@ -242,7 +255,7 @@
                 ?
               </h5>
               <p class="card-text lh-base">
-                SkateIt it's a community made by skaters to skaters, it's an
+                SkateIt it's a community made by skaters for skaters, it's an
                 online place where you can find the best spots in your city
                 added by other people and even add your favorite places. Rate
                 them, meet people and roll around!
@@ -328,7 +341,7 @@
       <div class="row p-0 m-0">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide rounded col-sm-12 col-md-7"
+          class="carousel slide rounded col-sm-12 col-md-7 mh-100"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -361,43 +374,39 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./assets/cover.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/cover.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./assets/coventry.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
               <div class="carousel-caption d-md-block">
-                <h5>Second slissssde label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/cover.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+                <h5>Coventry Block</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/skatehero.jpg"
+                src="./assets/indoor.jpg"
+                class="d-block w-100 mw-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Indoor Barcelona SkatePark</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/kickflip.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+              <div class="carousel-caption d-md-block">
+                <h5>Charata's SkatePark</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/vert.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-md-block">
+                <h5>Cayucos SkatePark</h5>
               </div>
             </div>
           </div>
@@ -420,6 +429,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
         <div class="container col-sm-12 col-md-5 mt-3 container-features2">
           <div
             class="
@@ -441,6 +451,8 @@
                 border border-dark border-2
                 shadow
                 discover
+                bg-dark
+                text-white
               "
             >
               <i class="fas fa-search-location"></i>
@@ -472,6 +484,8 @@
                 border border-dark border-2
                 shadow
                 share
+                bg-dark
+                text-white
               "
             >
               <i class="fas fa-share-alt"></i>
@@ -479,10 +493,14 @@
             </div>
           </div>
         </div>
-        <footer class="container mt-3 bg-dark text-white">
-          <div class="bg-dark">
+      </div>
+
+      <footer class="container-fluid mt-4 bg-dark text-white">
+        <div class="bg-dark">
           <div class="d-flex p-3 social-networks">
-            <p class="m-0 flex-grow-1 text-center">Connect on our social networks: </p>
+            <p class="m-0 flex-grow-1 text-center">
+              Connect on our social networks:
+            </p>
             <div
               class="
                 d-flex
@@ -497,117 +515,86 @@
             </div>
           </div>
         </div>
-       
-          <div class="row p-2">
-            <div
-              class="
-                col-12 col-sm-6 col-md-2
-                d-flex
-                justify-content-center
-                align-items-center
-                mt-5
-              "
-            >
-              <h3 class="fs-1">SkateIt</h3>
-            </div>
-            <div class="col-12  col-sm-6 col-md-3 p-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold fs-5">
-                  Useful Links
-                </li>
-                <li
-                  class="
-                    list-group-item  list-group-item-dark
-                  "
-                >
-                  Join us
-                </li>
-                <li
-                  class="
-                    list-group-item  list-group-item-dark
-                  "
-                >
-                  Partnership
-                </li>
-                <li
-                  class="
-                    list-group-item  list-group-item-dark
-                  "
-                >
-                  Skate sale
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 p-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold fs-5">
-                Philosophy
-                </li>
-                <li
-                  class="
-                    list-group-item list-group-item-dark
-                  "
-                >
-                  Skateboarding
-                </li>
-                <li
-                  class="
-                    list-group-item list-group-item-dark
-                  "
-                >
-                  Physical Activity
-                </li>
-                <li
-                  class="
-                    list-group-item list-group-item-dark
-                  "
-                >
-                  Skate sale
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-3">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold fs-5">
-                  Contact
-                </li>
-                <li
-                  class="
-                    list-group-item list-group-item-dark
-                    d-flex
-                    align-items-center
-                  "
-                >
-                  <i class="fas fa-envelope me-2"> </i> skateit@skateit.com
-                </li>
-                <li
-                  class="
-                    list-group-item  list-group-item-dark
-                    d-flex
-                    align-items-center
-                  "
-                >
-                  <i class="fas fa-home me-2"></i> Barcelona
-                </li>
-                <li
-                  class="
-                    list-group-item list-group-item-dark
-                    d-flex
-                    align-items-center
-                    
-                  "
-                >
-                  <i class="fas fa-phone-alt me-2"></i> +34 999 999 999
-                </li>
-              </ul>
-            </div>
+
+        <div class="row p-2">
+          <div
+            class="
+              col-12 col-sm-6 col-md-2
+              d-flex
+              justify-content-center
+              align-items-center
+              mt-3
+            "
+          >
+            <h3 class="fs-1">
+              SkateIt <img class="skateit" src="./assets/skateit.png" alt="" />
+            </h3>
           </div>
-          <div class="col-12">
-            <p class="text-center fw-lighter">© 2021 Copyright SkateIt.com</p>
+          <div class="col-12 col-sm-6 col-md-3 p-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark fw-bold fs-5">
+                Useful Links
+              </li>
+              <li class="list-group-item list-group-item-dark">Join us</li>
+              <li class="list-group-item list-group-item-dark">Partnership</li>
+              <li class="list-group-item list-group-item-dark">Skate sale</li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark fw-bold fs-5">
+                Philosophy
+              </li>
+              <li class="list-group-item list-group-item-dark">
+                Skateboarding
+              </li>
+              <li class="list-group-item list-group-item-dark">
+                Physical Activity
+              </li>
+              <li class="list-group-item list-group-item-dark">Skate sale</li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark fw-bold fs-5">
+                Contact
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                "
+              >
+                <i class="fas fa-envelope me-2"> </i> skateit@skateit.com
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                "
+              >
+                <i class="fas fa-home me-2"></i> Barcelona
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                "
+              >
+                <i class="fas fa-phone-alt me-2"></i> +34 999 999 999
+              </li>
+            </ul>
           </div>
         </div>
-        </footer>
-    
+        <div class="col-12">
+          <p class="text-center fw-lighter m-0 p-1">
+            © 2021 Copyright SkateIt.com
+          </p>
+        </div>
+      </footer>
     </div>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
     <!--     <script
