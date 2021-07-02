@@ -132,6 +132,7 @@ body {
 .list-group-item-dark {
   background: none;
   cursor: pointer;
+  color: white;
 }
 
 @keyframes pulse {
