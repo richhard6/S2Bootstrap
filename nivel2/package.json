@@ -1,0 +1,14 @@
+{
+  "name": "nivel2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass --output-style compressed -o assets/css/bootstrap.css assets/scss/bootstrap.scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

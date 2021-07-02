@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkateIt - Home</title>
+
+    <script
+      src="https://kit.fontawesome.com/92599d7af9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!--   <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  /> -->
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.css/bootstrap.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <div class="container-fluid p-0 bg-light">
+      <!--    NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-3" href="#">
+            <img
+              src="./assets/skateit.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            SkateIt
+          </a>
+          <div class="justify-content-end order-lg-1">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="ms-2 btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#register"
+            >
+              Register
+            </button>
+          </div>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            class="order-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Spots</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--  NavBar -->
+
+      <!--  Modals  -->
+      <div
+        class="modal fade"
+        id="login"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-white" id="loginlabel">Login</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Username</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="register"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title text-white" id="loginlabel">Register</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="put your username"
+                />
+                <label for="floatingInput">Username</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="form-floating mt-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  placeholder="Password"
+                />
+                <label for="confirmPassword">Confirm Password</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     Modals  -->
+
+      <!--     Main  -->
+      <main class="container-xxl g-0">
+        <div class="main-image mt-5">
+          <h2 class="title text-center fw-lighter w-100">
+            <span class="fw-bold">SkateIt</span> - Your skate spots guide
+          </h2>
+        </div>
+        <div class="card-body mt-3">
+          <div class="row">
+            <div
+              class="
+                col-sm-12 col-md-6
+                d-flex
+                flex-column
+                justify-content-center
+                mb-3
+                bg-secondary
+              "
+            >
+              <h5 class="card-title mb-2">
+                Bored of the same places? Need to find new spots to skate around
+                ?
+              </h5>
+              <p class="card-text lh-base">
+                SkateIt it's a community made by skaters for skaters, it's an
+                online place where you can find the best spots in your city
+                added by other people and even add your favorite places. Rate
+                them, meet people and roll around!
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary boton mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#register"
+                >JOIN US</a
+              >
+            </div>
+            <div class="imageContainer mb-3 container-fluid col-sm-12 col-md-6">
+              <img
+                src="./assets/skatehero.jpg"
+                class="img-fluid rounded heroImage"
+                alt=""
+              />
+              <div
+                class="
+                  container-fluid
+                  d-flex
+                  flex-sm-row flex-md-column
+                  features
+                  h-100
+                  justify-content-between
+                  p-3
+                "
+              >
+                <div
+                  class="
+                    p-2
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    w-25
+                    h-25
+                    bg-success
+                    text-white
+                  "
+                >
+                  <i class="fas fa-map mb-1"></i>
+                  <h5>Maps</h5>
+                </div>
+                <div
+                  class="
+                    p-2
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    w-25
+                    h-25
+                    bg-info
+                    text-white
+                  "
+                >
+                  <i class="fas fa-compass mb-1"></i>
+                  <h5>Exploring</h5>
+                </div>
+                <div
+                  class="
+                    p-2
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    w-25
+                    h-25
+                    bg-warning
+                    text-white
+                  "
+                >
+                  <i class="fas fa-users mb-1"></i>
+                  <h5>Community</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="row p-0 m-0">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide rounded col-sm-12 col-md-7 mh-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/coventry.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Coventry Block</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/indoor.jpg"
+                class="d-block w-100 mw-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Indoor Barcelona SkatePark</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/kickflip.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Charata's SkatePark</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/vert.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-md-block">
+                <h5>Cayucos SkatePark</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container col-sm-12 col-md-5 mt-3 container-features2">
+          <div
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-around
+              align-items-center
+              inner-container-features
+              h-100
+              bg-secondary
+            "
+          >
+            <div
+              class="
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+                rounded-circle
+                shadow
+                discover
+                bg-info
+                text-white
+              "
+            >
+              <i class="fas fa-search-location"></i>
+              <h5 class="fw-normal mt-2">Discover</h5>
+            </div>
+            <div
+              class="
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+                rounded-circle
+                bg-warning
+                shadow
+                rate
+              "
+            >
+              <i class="fas fa-star star"></i>
+
+              <h5 class="fw-normal mt-2">Rate</h5>
+            </div>
+            <div
+              class="
+                d-flex
+                flex-column
+                align-items-center
+                justify-content-center
+                rounded-circle
+                shadow
+                share
+                bg-success
+                text-white
+              "
+            >
+              <i class="fas fa-share-alt"></i>
+              <h5 class="fw-normal mt-2">Share</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container-fluid mt-4 bg-dark text-white">
+        <div class="bg-dark">
+          <div class="d-flex p-3 social-networks">
+            <p class="m-0 flex-grow-1 text-center">
+              Connect on our social networks:
+            </p>
+            <div
+              class="
+                d-flex
+                flex-grow-1
+                justify-content-around
+                align-items-center
+              "
+            >
+              <i class="fab fa-twitter"></i><i class="fab fa-facebook"></i
+              ><i class="fab fa-instagram"></i
+              ><i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div
+            class="
+              col-12 col-sm-6 col-md-2
+              d-flex
+              justify-content-center
+              align-items-center
+              mt-3
+            "
+          >
+            <h3 class="fs-1">
+              SkateIt <img class="skateit" src="./assets/skateit.png" alt="" />
+            </h3>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  fw-bold
+                  fs-5
+                  text-white
+                "
+              >
+                Useful Links
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Join us
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Partnership
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Skate sale
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-3 text-white">
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  text-white
+                  fw-bold
+                  fs-5
+                "
+              >
+                Philosophy
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Skateboarding
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Physical Activity
+              </li>
+              <li class="list-group-item list-group-item-dark text-white">
+                Skate sale
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <ul class="list-group list-group-flush">
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  fw-bold
+                  text-white
+                  fs-5
+                "
+              >
+                Contact
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                  text-white
+                "
+              >
+                <i class="fas fa-envelope me-2"> </i> skateit@skateit.com
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                  text-white
+                "
+              >
+                <i class="fas fa-home me-2"></i> Barcelona
+              </li>
+              <li
+                class="
+                  list-group-item list-group-item-dark
+                  d-flex
+                  align-items-center
+                  text-white
+                "
+              >
+                <i class="fas fa-phone-alt me-2"></i> +34 999 999 999
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="text-center fw-lighter m-0 p-1">
+            © 2021 Copyright SkateIt.com
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!--     <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script> -->
+    <!--     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
